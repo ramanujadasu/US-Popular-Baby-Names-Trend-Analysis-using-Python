@@ -1,0 +1,32 @@
+
+
+pip install --upgrade pip
+pip install jupyter
+
+Go to Registry editor in windows
+Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\LongPathsEnabled (Type: REG_DWORD) must exist and be set to 1. 
+Reference: https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd#enable-long-paths-in-windows-10-version-1607-and-later
+
+/cygdrive/c/Users/Ramanujadasu/jupyter_workspace
+
+import os, glob
+import pandas as pd
+
+path = r"C:\Users\Ramanujadasu\jupyter_workspace\file"
+all_files = glob.glob(os.path.join(path, "yob*.txt"))
+df_from_each_file = (pd.read_csv(f, delimiter =',' ) for f in all_files)
+pd.read_csv(BytesIO(z.read(file_name)), encoding='utf-8', engine='python', header=None)
+df_merged   = pd.concat(df_from_each_file, ignore_index=False)
+df_merged.to_csv( "merged.csv",index=False, encoding='utf-8-sig')
+
+http://beyondvalence.blogspot.com/2014/09/python-and-pandas-part-3-baby-names.html
+https://github.com/ramanujadasu/US-Popular-Baby-Names-Trend-Analysis-using-Python
+
+C:\Users\Ramanujadasu\jupyter_workspace\US-Popular-Baby-Names-Trend-Analysis-using-Python\names
+
+C:\Users\Ramanujadasu\jupyter_workspace\US-Popular-Baby-Names-Trend-Analysis-using-Python\names
+pip install plotly
+pip install matplotlib
+pip install express
+pip install inline
+pip install pylab
