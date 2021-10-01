@@ -20,6 +20,7 @@ df_merged   = pd.concat(df_from_each_file, ignore_index=False)
 df_merged.to_csv( "merged.csv",index=False, encoding='utf-8-sig')
 
 http://beyondvalence.blogspot.com/2014/09/python-and-pandas-part-3-baby-names.html
+
 https://github.com/ramanujadasu/US-Popular-Baby-Names-Trend-Analysis-using-Python
 
 C:\Users\Ramanujadasu\jupyter_workspace\US-Popular-Baby-Names-Trend-Analysis-using-Python\names
@@ -30,3 +31,18 @@ pip install matplotlib
 pip install express
 pip install inline
 pip install pylab
+
+==
+github.com:ramanujadasu/US-Popular-Baby-Names-Trend-Analysis-using-Python.git
+
+git clone github.com:ramanujadasu/US-Popular-Baby-Names-Trend-Analysis-using-Python.git
+git add <filesnmae>
+git commit -m "update"
+git push origin <branch name ,ex: master
+
+
+== 
+To start:
+pip install jupyter
+jupyter notebook
+
